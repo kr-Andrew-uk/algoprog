@@ -1,2 +1,2 @@
 # algoprog
-My uni labs 2 sem
+Крук Андрій Ігорович ІР-11 
