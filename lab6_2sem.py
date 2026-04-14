@@ -4,7 +4,6 @@ from itertools import combinations
 def solve(input_text):
     lines = input_text.strip().split('\n')
     N, B = map(int, lines[0].split())
-    # Об'єднуємо всі токени і отримуємо список окремих символів Y/N
     prefs_raw = list(''.join(lines[1].split()))
 
     employee_beers = []
