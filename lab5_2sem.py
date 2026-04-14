@@ -66,7 +66,7 @@ def solve():
     except FileNotFoundError:
         print("Файл input.txt не знайдено.")
     except Exception as e:
-        print(f"Виникла помилка: {e}")
+        print(f"Виникла помилка:  {e}")
 
 if __name__ == "__main__":
     solve()
