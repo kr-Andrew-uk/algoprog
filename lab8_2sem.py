@@ -5,7 +5,7 @@ def solve(filename):
         input_data = f.read().split()
     
     if not input_data:
-        return
+        return(print("Помилка - введіть вхідні дані"))
     
     w = int(input_data[0])
     heights = [int(x) for x in input_data[1:]]
