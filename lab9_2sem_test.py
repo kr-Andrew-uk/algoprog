@@ -1,21 +1,13 @@
 import sys
 import os
 import unittest
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-
 from lab9_2sem import build_prefix_function, kmp_search
-
-
 class TestBuildPrefixFunction(unittest.TestCase):
-
     def test_no_repeating_pattern(self):
         self.assertEqual(build_prefix_function("abcd"), [0, 0, 0, 0])
-
     def test_classic_kmp_pattern(self):
         self.assertEqual(build_prefix_function("ababaca"), [0, 0, 1, 2, 3, 0, 1])
-
-
 class TestKmpSearch(unittest.TestCase):
 
     def test_single_occurrence(self):
